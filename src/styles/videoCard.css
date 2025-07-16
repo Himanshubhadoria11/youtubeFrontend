@@ -1,0 +1,71 @@
+* {
+    font-family: 'Roboto';
+}
+
+.VideoCard {
+    overflow: hidden;
+    border-radius: 8px;
+    width: 400px;
+    height: 350px
+}
+
+.VideoCardVCcollapsed {
+    width: 330px;
+    height: 280px;
+}
+
+.thumbnailImage {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.videIinfo {
+    display: flex;
+    gap: 10px;
+}
+
+.channelLogo {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoTitle {
+    display: -webkit-box;
+    line-clamp: 2;
+    /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 45px;
+    font-size: medium;
+}
+
+.videoDetails span {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    font-weight: lighter;
+}
+
+/* Responsiveness */
+
+@media (max-width: 600px) {
+    .VideoCard {
+        width: 100%; /* Full width for small screens */
+        border-radius: 0px; /* Remove border radius for small screens */
+    }
+
+    .thumbnailImage {
+        border-radius: 0px; /* Remove border radius for small screens */
+    }
+    .VideoCardVCcollapsed {
+        width: 100%; /* Full width for small screens */
+        border-radius: 0px; /* Remove border radius for small screens */
+    }
+}

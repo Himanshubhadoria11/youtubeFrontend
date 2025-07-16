@@ -1,0 +1,463 @@
+ * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Header component  */
+
+ .header {
+    display: flex;
+    padding: 0 16px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0px -4px 8px 0.0001px black;
+}
+
+.logo-Container {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    color: black;
+}
+
+.logo-Container button {
+    border: none;
+    background: none;
+    font-size: x-large;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-Container button:hover {
+    background: gainsboro;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo :nth-child(1) {
+    color: red;
+    font-size: xx-large;
+}
+
+.logo p {
+    font-size: x-large;
+}
+
+.searchContainer {
+    display: flex;
+    flex: 0 1 50%;
+    column-gap: 8px;
+    align-items: center;
+    justify-content: right;
+}
+
+.microphone {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    border: 2px solid gainsboro;
+}
+
+.mbl-header {
+    display: none;
+}
+
+.search-field {
+    display: flex;
+    flex: 0 1 600px;
+    align-items: center;
+    height: 40px;
+    border-radius: 24px;
+    overflow: hidden;
+    justify-content: center;
+    border: 2px solid gainsboro;
+}
+
+#search-bar {
+    border: none;
+    padding: 8px;
+    margin: 0px;
+    width: 90%;
+    height: 100%;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    box-sizing: border-box;
+}
+
+.search-field button {
+    padding: 8px 16px;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    height: 100%;
+    width: 10%;
+}
+
+#create {
+    align-self: center;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    font-size: 26px;
+    font-weight: lighter;
+    color: rgb(0, 119, 255);
+    border: 1px solid gainsboro;
+    background: none;
+}
+
+#create:hover {
+    background: rgba(124, 207, 255, 0.811);
+}
+
+#create span {
+    padding: 0px 8px;
+    font-size: small;
+    font-weight: bold;
+}
+
+
+.user-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.profile-container {
+    display: flex;
+}
+
+.profile {
+    display: flex;
+    padding: 4px 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gainsboro;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.profile-placeholder {
+    width: 50px;
+    height: 50pxpx;
+    border-radius: 50%;
+    background: rgb(192, 33, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 300px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu2 {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 200px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 8px;
+    background: none;
+    border: none;
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    font-size: x-large;
+}
+
+.dropdown-menu2 .dropdown-item {
+    padding: 8px;
+    background: none;
+    border: none;
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    font-size: x-large;
+}
+
+.dropdown-item span {
+    font-size: small;
+}
+
+.create-channel,
+.logout {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.userProfile {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-div {
+    padding: 12px;
+
+}
+
+.dropdown-div button,
+.dropdown-div p {
+    padding: 8px;
+    background: none;
+    border: none;
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    font-size: larger;
+    width: 100%;
+}
+
+.dropdown-div button span,
+.dropdown-div p span {
+    font-size: medium;
+}
+
+.dropdown-item:hover,
+.dropdown-div button:hover,
+.dropdown-div p:hover {
+    background: gainsboro;
+}
+
+#userName:hover {
+    background: none;
+}
+
+/* Responsiveness */
+ @media (max-width: 600px) {
+    button.menu {
+        display: none;
+    }
+
+    .logo-Container {
+        display: none;
+    }
+
+    .action-container {
+        display: none;
+    }
+
+    .searchContainer {
+        display: none;
+    }
+
+    .mbl-header {
+        display: flex;
+    }
+
+    .mbl-search {
+        display: flex;
+        padding: 4px;
+        align-self: center;
+    }
+
+    .mbl-search-btn {
+        display: inline;
+        border: none;
+        background: none;
+        padding: 4px;
+        align-self: flex-end;
+        justify-self: end;
+    }
+
+    .user-actions {
+        display: none;
+    }
+
+    .header {
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 4px;
+        width: 101%;
+    }
+
+    .microphone {
+        display: none;
+    }
+
+    .mbl-header {
+        display: flex;
+        padding: 0px 12px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        background-color: #fff;
+    }
+
+    .mbl-header-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .mbl-search-bar:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .mbl-search-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 24px;
+        background: rgb(217, 217, 217);
+    }
+
+    .mbl-search-bar {
+        display: none;
+        padding: 10px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        background: transparent;
+    }
+
+    .mbl-search-container.active .mbl-search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+        height: 40px;
+        margin-left: 30px;
+        font-size: 18px;
+        border: none;
+        box-sizing: border-box;
+    }
+
+    #mbl-search-btn,
+    .mbl-back-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+        align-items: center;
+    }
+
+    #mbl-search-btn {
+        background: white;
+    }
+
+    .mbl-back-btn {
+        display: none;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }
+
+    .mbl-search-container.active .mbl-back-btn {
+        display: block; /* Show back button when search container is active */
+     }
+
+    .mbl-header-content.hidden {
+        display: none; /* Hide header content when hidden class is applied */
+     }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo-Container {
+        gap: 10px;    /* Adjust gap for logo container  */
+     }
+
+    .logo-Container p {
+        font-size: medium;
+    }
+
+    .searchContainer {
+        flex: none;
+        width: 380px;
+        height: 40px;
+        justify-content: left;
+    }
+
+    .search-field {
+        height: 30px;
+        width: 320px;
+        flex: none;
+    }
+
+    .search-field button {
+        padding: 0px;
+    }
+
+    .microphone {
+        height: 35px;
+        width: 35px;
+        font-size: small;
+    }
+
+    .user-actions {
+        justify-content: space-around;
+        width: 180px;
+        align-items: center;
+    } 
+     .header{
+        width: 100%;
+    }
+} 

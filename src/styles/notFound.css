@@ -1,0 +1,32 @@
+.error-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 10px; /* Gap between elements in the container */
+}
+
+.error-code {
+  font-size: 72px; /* Large font size for error code */
+  font-weight: bold; /* Bold font weight for error code */
+}
+
+.error-message {
+  font-size: 20px; /* Font size for error message */
+}
+
+.error-button {
+  border: 1px solid black; /* Border for error button */
+  padding: 10px 24px; /* Padding for error button */
+  cursor: pointer; /* Pointer cursor on hover */
+  background: none; /* No background for error button */
+  font-size: 16px; /* Font size for error button */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.error-button:hover {
+  background-color: black; /* Background color on hover */
+  color: white; /* Text color on hover */
+}

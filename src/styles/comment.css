@@ -1,0 +1,86 @@
+.comment-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f5f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.comment-content {
+  display: flex;
+  gap: 10px;
+}
+
+.comment-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 9999px;
+}
+
+.comment-data {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.comment-time {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.comment-input {
+  outline: none;
+  border: 1px solid #d1d5db;
+  padding: 5px;
+  width: 35rem;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.comment-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.comment-options {
+  position: relative;
+}
+
+.options-icon {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.options-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  border-radius: 5px; /* Rounded corners for options menu */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for options menu */
+  right: 5px;
+  top: 0;
+}
+
+.options-menu.show {
+  display: block; /* Show options menu when active */
+}
+
+.option-item {
+  padding: 8px; /* Padding for option items */
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Gap between icon and text */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.option-item:hover {
+  background-color: #e5e7eb; /* Light gray background color on hover */
+}

@@ -1,0 +1,46 @@
+@import "tailwindcss";
+.whole {
+    width: 100%;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15vw;
+    width: calc(100vw - 18vw);
+}
+
+.collapsed {
+    margin-left: 6vw;
+    width: calc(100vw - 8vw); /* Adjust width when sidebar is collapsed */
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .videos {
+        width: 96%; /* Full width for small screens */
+        padding: 0px 4px; /* Padding for small screens */
+        margin-left: 0vw; /* Remove margin for small screens */
+        /* overflow: hidden; */
+    }
+
+    .home {
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Full width for small screens */
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .collapsed {
+        margin-left: 8vw;
+        width: calc(100vw - 8vw);
+    }
+}

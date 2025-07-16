@@ -1,0 +1,80 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 80vw;
+    background: rgba(249, 238, 238, 0.317);
+    border-radius: 8px;
+    margin-top: 2vw;
+    box-shadow: 2px 2px 8px 0px rgb(0, 0, 0);
+}
+
+.profile-container .profile-placeholder {
+    background: rgb(0, 187, 255);
+    width: 150px;
+    height: 150px;
+    font-size: 70px;
+    padding: 0px;
+}
+
+.image-container {
+    padding: 8px;
+}
+
+.image-container img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 9999px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    row-gap: 10px;
+    box-sizing: border-box;
+}
+
+.custButtons button {
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: none;
+    font-weight: bold;
+    font-size: medium;
+    background-color: rgb(222, 221, 221); /* Light gray background color for buttons */
+    transition: background 0.3s; /* Smooth transition for background color */
+}
+
+.custButtons {
+    display: flex;
+    gap: 12px; /* Gap between buttons */
+}
+
+.custButtons button:hover {
+    background-color: black; /* Background color on hover */
+    color: white; /* Text color on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        border: 2px solid black; /* Border for profile container on small screens */
+    }
+    .profile-container .profile-placeholder {
+        background: rgb(0, 187, 255);
+        width: 150px;
+        height: 150px;
+        font-size: 70px;
+        padding: 0px;
+    }
+    .image-container img {
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        border-radius: 9999px;
+    }
+}

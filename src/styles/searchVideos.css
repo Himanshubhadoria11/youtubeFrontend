@@ -1,0 +1,39 @@
+/* Results Container */
+.results-container {
+  width: 100%;
+  max-width: 80vw;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Heading */
+.results-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+/* Results List */
+.results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* No Results Message */
+.no-results {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #777;
+  text-align: center; /* Center align text for no results message */
+}
+
+@media (max-width: 600px) {
+  .results-container {
+    width: 100%; /* Full width for small screens */
+    max-width: 100%; /* Remove max-width constraint for small screens */
+    margin: 0px; /* Remove margin for small screens */
+    padding: 0px; /* Remove padding for small screens */
+  }
+}
