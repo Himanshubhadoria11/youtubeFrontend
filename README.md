@@ -10,6 +10,10 @@ A React-based frontend for the YouTube Clone application, providing a seamless U
 - CSS (Responsive Design)
 - Vite (Frontend Bundler)
 
+## Live URLs
+
+# Frontend [youtubeFrontend]-	  https://youtube-frontend-psi-liart.vercel.app
+
 ## Features
 - Home page with video grid, search bar, and filter options
 - User authentication (signup, login) with JWT
