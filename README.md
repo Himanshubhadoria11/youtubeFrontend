@@ -12,7 +12,7 @@ A React-based frontend for the YouTube Clone application, providing a seamless U
 
 ## Live URLs
 
-# Frontend [youtubeFrontend]-	  https://youtube-frontend-psi-liart.vercel.app
+# Frontend [youtubeFrontend]-	  https://youtube-frontend-himanshu-bhadoria.vercel.app
 
 ## Features
 - Home page with video grid, search bar, and filter options
